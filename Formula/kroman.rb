@@ -7,6 +7,8 @@ fafae2ac45ddba85871d24eeeb117b9613a93f3f.tar.gz"
   sha256 "41be668b159dc8f58263290a51b69a35b566a1f82f6ed5944644eb5e253a6916"
   head "https://github.com/cheunghy/kroman.git"
 
+  version "1.0"
+
   def install
     system "make", "kroman"
     system "make", "install", "PREFIX=#{prefix}", "MANDIR=#{man}"
