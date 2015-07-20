@@ -4,7 +4,7 @@ class Kroman < Formula
   homepage "https://github.com/cheunghy/kroman"
   url "https://github.com/cheunghy/kroman/archive/\
 fafae2ac45ddba85871d24eeeb117b9613a93f3f.tar.gz"
-  sha256 "41be668b159dc8f58263290a51b69a35b566a1f82f6ed5944644eb5e253a6916"
+  sha256 "4b614e2b3bc0227ac765ef13f68bc069a87001383e4d71254932dedd0730294f"
   head "https://github.com/cheunghy/kroman.git"
 
   version "1.0"
