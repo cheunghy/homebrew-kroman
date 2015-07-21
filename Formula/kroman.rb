@@ -11,7 +11,7 @@ fafae2ac45ddba85871d24eeeb117b9613a93f3f.tar.gz"
 
   def install
     system "make", "kroman"
-    system "make", "install", "PREFIX=#{prefix}", "MANDIR=#{man}"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
