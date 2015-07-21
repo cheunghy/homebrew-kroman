@@ -15,10 +15,8 @@ fafae2ac45ddba85871d24eeeb117b9613a93f3f.tar.gz"
   end
 
   test do
-    (testpath/"korean.txt").write <<-EOS.undent
-      I Love 한국어
-    EOS
-    system "#{bin}/kroman", "<", testpath/"korean.txt", ">", testpath/"r.txt"
-    assert_equal "I Love han-gug-eo\n", File.read("r.txt")
+    ENV["LC_ALL"] = "en_US.UTF-8"
+    assert_equal "I Love han-gug-eo",
+                 pipe_output("#{bin}/kroman", "I Love 한국어")
   end
 end
